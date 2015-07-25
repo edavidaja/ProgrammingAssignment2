@@ -1,7 +1,9 @@
-## Put comments here that give an overall description of what your
-## functions do
+## makeCacheMatrix computes the matrix inverse of matrix X
+## cacheSolve checks to see if a solution for X has already been computed
+## and, computes and displays it if not; otherwise it displays the
+## previously computed result
 
-## Caching the matrix
+## Caching the solution to the matrix
 
 makeCacheMatrix <- function(x = matrix()) {
     m <- NULL
@@ -18,7 +20,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## Check if matrix inverse is cached; solve if not
 
 cacheSolve <- function(x, ...) {
            m <- x$getinv()
